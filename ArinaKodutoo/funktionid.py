@@ -77,26 +77,39 @@ def season(num: int):
     return t 
 
 def is_prime(n):
-   if n < 2:
+    """ algarvud
+    :param algarv või mitte
+    :rtype: kui mitte lihtne kirjuta false
+    """
+    if n < 2:
        return False
-   if n == 2:
+    if n == 2:
        return True
-   limit = n**(1/2)
-   i = 2
-   while i <= limit:
+    limit = n**(1/2)
+    i = 2
+    while i <= limit:
        if n % i == 0:
            return False
        i += 1
-   return True
+    return True
 
-def bank(a, m, y):
-        nal = a
-        year = y
-        def money():
-            if year >0:
-                nal = a*1.1+m
-                year = year -1
-                return money()
-            else:
-                return nal
+def bank(a, years):
+
+
+    if a < 0 or a == 0:
+
+        print("viga!")
+        return
+
+    if years < 0 or years == 0:
+        print("viga!")
+    else:
+        result = ((1+0.1)**years)*a
+    summa = a + result
+    print("Teie konto läbi", years, "aasta on:", summa)
+
+
+
+   
+
 

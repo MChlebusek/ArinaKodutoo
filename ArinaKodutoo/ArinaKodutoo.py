@@ -16,27 +16,25 @@ except:
 print(is_prime(int(input("arv: "))))
 
 #5
-a = int(input("kui palju euru: "))
-m = int(input("kui palju veel:"))
-y = int(input("kui palju aastat:"))
-
-print(nal)
+a = int(input("kui palju euro: "))
+years = int(input("Mitu aastat?"))
+bank(a, years)
 
 
 #4
-num=season(input())
+num=season(input("kuu number: "))
 print(num)
 
 
 #3
-P,S,d=square(input())
+P,S,d=square(input("ruudu külg"))
 print(f"Läbimõõt: {P}")
 print(f"Pindala: {S}")
 print(f"Diagonaal: {d}")
 
 
 #2
-true_false,p=is_year_leap(input())
+true_false,p=is_year_leap(input("Sisesta aasta: "))
 print(true_false,"----",p)
 
 
